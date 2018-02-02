@@ -1,0 +1,12 @@
+<launch>
+	<param name="/use_sim_time" value="true"/>
+	<arg name="world_file" default="$(find my_turtle)/world/maze.world" />
+
+	<node name="stage" pkg="stage_ros" type="stageros" args="$(arg world_file)">
+		<remap from="base_scan_1" to="scan" />
+		<remap from="base_scan_0" to="scan_back" />
+		<!--remap from="base_scan_0" to="scan_back" /-->
+		<!--remap from="odom" to="odom_stage" /-->
+	</node>
+	<!--node name="stopper" pkg="my_turtle" type="stopper" output="screen" /-->
+</launch>
