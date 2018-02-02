@@ -16,7 +16,7 @@ Then clone this git in your *catkin/src*.
 Packages and all files within the following folder:
 + slalom_2/
 
-## Dependencies and how to install
+## Dependencies 
 For installing our packages some libraries are necessary:
 ```sh
 $ cd ~
@@ -24,15 +24,6 @@ $ cd ~
 ~$ sudo apt install libeigen3-dev
 ```
 The Eigen library is used for operations with vectors and matrices. We used them in the implementation of our algorithms for the slalom task.
-
-For installing download this repository to your *~/catkin_ws/src* and proceed as follows:
-
-```sh
-~$ cd catkin_ws/src
-~/catkin_ws/src$ git clone http://tas.lsr.ei.tum.de/TAS201718/TAS201718_G3.git
-~/catkin_ws/src$ cd ..
-~/catkin_ws$ catkin_make
-```
 
 ## Autonomous driving
 This task was solved by modifing some parameters mostly asociated to the navigation stack nodes.
