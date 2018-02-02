@@ -1,6 +1,6 @@
 Technical Autonomous Systems WS2017/18 G3
 =================================
-This git presents the work developed in the frame of the TAS Lecture for the WS2017/18. 
+This git presents the work developed in the frame of the TAS Lecture for the WS2017/18. And my contribution is in the file *src/slalom_2/*
 To install this code make sure you have a functional catkin workspace. 
 Then clone this git in your *catkin/src*.
 
