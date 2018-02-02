@@ -6,7 +6,7 @@
 #   |  Technik Autonomer Systeme -TUM          |
 #   |  Gruppe 03                               |
 #   |                                          |
-#   |  Author: WS 2017/2018-| Hao Xu-ga84zec|  |
+#   |  Author: WS 2017/2018-| Hao Xu |         |
 #   |__________________________________________|
 
 
@@ -190,7 +190,7 @@ void Slalom::first_p(){
             if(result == 1)
             {                
                 ROS_INFO("Succeed: The car moves to second cone:)");
-                SendGoal((Go_x-InitGoal_x) + Go_x + 0.4, -0.6, 0);
+                SendGoal((Go_x-InitGoal_x) + Go_x, -0.6, 0);
                 old_go1 = (Go_x-InitGoal_x) + Go_x;
                 current_state = SECOND_P;
             }
@@ -238,8 +238,8 @@ void Slalom::second_p(){
         {
             ROS_INFO("Succeed: The car moves to the third cone!");
 
-            SendGoal((Go_x-old_go1) + Go_x -0.4, 0.6, 0);
-            old_go1 = (Go_x-old_go1) + Go_x -0.4;
+            SendGoal((Go_x-old_go1) + Go_x, 0.6, 0);
+            old_go1 = (Go_x-old_go1) + Go_x;
             current_state = THIRD_P;
         }
         else
