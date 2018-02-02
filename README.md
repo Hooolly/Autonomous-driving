@@ -13,7 +13,6 @@ Then clone this git in your *catkin/src*.
 + Trailer system analysis. 
 
 ## Files contributed
-### Hao Xu
 Packages and all files within the following folder:
 + slalom_2/
 
